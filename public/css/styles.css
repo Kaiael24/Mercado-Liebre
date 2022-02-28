@@ -1,0 +1,118 @@
+:root{
+    /* Colors */
+    --color-Amarillo: #EAC926;
+    --color-Azul: #03264C;
+    --color-Celeste: #1259c3;
+    --color-Gris-oscuro: #666;
+    --color-Gris-claro: #ebebeb;
+    --color-Verde: #39b54a;
+    --color-Blanco: white;
+    --color-Negro: black;
+    /* Fonts-family */
+    --font-roboto:'Roboto', sans-serif;
+    /* FUENTES */
+    --font-cuerpo: 14px;
+    --font-titulares: 24px;
+    --font-precios: 18px;
+    --font-descuentos: 16px;
+    --font-descripciones: 16px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-roboto);
+} 
+
+/* HEADER */
+header{
+    background-color: var(--color-Amarillo);
+    padding: 20px 0 20px;
+}
+header img.logo{
+    width: 40%;
+    padding-left: 20px;
+}
+header input{
+    display: block;
+    margin-left: 15px ;
+}
+header button{
+    margin-left: 15px;
+}
+header p{
+    text-align: center;
+    font-size: var(--font-cuerpo);
+}
+header nav ul{
+    list-style: none;
+    font-size: var(--font-cuerpo);
+    margin: 15px 0 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--color-Negro);
+}
+header div.contenedor-burger{
+    background-color: var(--color-Celeste);
+    color: var(--color-Blanco);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+/* FIN HEADER */
+
+/* MAIN */
+main{
+    background-color: var(--color-Gris-claro);
+}
+main section h3.titulares{
+    font-size: var(--font-titulares);
+}
+main section p.precio{
+    font-size: var(--font-precios);
+}
+main section p.descuento{
+    font-size: var(--font-descuentos);
+}
+main section p.descripcion{
+    font-size: var(--font-descripciones);
+}
+/* FIN MAIN */
+
+/* FOOTER */
+    footer{
+        margin:10px 0 20px;
+        text-align: center;
+        font-size: var(--font-cuerpo);
+       
+    }
+    footer article p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer article {
+        margin: 40px 0 30px;
+        
+    }
+    footer article i{
+        color: var(--color-Celeste);
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    footer article h4{
+        margin: 5px 0 2px;
+        font-size: 16px;
+    }
+    footer div.copyright{
+        font-size: 12px;
+        margin-left: 15px;
+        text-align: start;
+    }
+/* FIN FOOTER */
