@@ -70,16 +70,32 @@ header div.contenedor-burger{
 
 /* MAIN */
 main{
+    text-align: center;
     background-color: var(--color-Gris-claro);
 }
+main section{
+    margin: 0 auto;
+    width: 90%;
+}
+main section article{
+    margin-bottom: 10px;
+}
+main section article div.envios-oferta{
+    border: solid 1px #ebebeb;
+    margin:0 15px 0 15px;
+    color: var(--color-Verde);
+}
+
 main section h3.titulares{
     font-size: var(--font-titulares);
 }
 main section p.precio{
     font-size: var(--font-precios);
+    color: var(--color-Negro);
 }
 main section p.descuento{
     font-size: var(--font-descuentos);
+    color: var(--color-Verde);
 }
 main section p.descripcion{
     font-size: var(--font-descripciones);
@@ -116,3 +132,4 @@ main section p.descripcion{
         text-align: start;
     }
 /* FIN FOOTER */
+
