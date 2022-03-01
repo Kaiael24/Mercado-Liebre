@@ -31,6 +31,9 @@ header{
     background-color: var(--color-Amarillo);
     padding: 20px 0 20px;
 }
+header nav{
+    display: none;
+}
 header img.logo{
     width: 40%;
     padding-left: 20px;
@@ -79,13 +82,15 @@ main section{
 }
 main section article{
     margin-bottom: 10px;
+    background-color: var(--color-Blanco);
 }
 main section article div.envios-oferta{
     border: solid 1px #ebebeb;
     margin:0 15px 0 15px;
     color: var(--color-Verde);
+    text-align: left;
+    
 }
-
 main section h3.titulares{
     font-size: var(--font-titulares);
 }
@@ -99,6 +104,8 @@ main section p.descuento{
 }
 main section p.descripcion{
     font-size: var(--font-descripciones);
+    color: var(--color-Negro);
+    display: none;
 }
 /* FIN MAIN */
 
@@ -133,3 +140,24 @@ main section p.descripcion{
     }
 /* FIN FOOTER */
 
+
+/* Navegación en tablets (ancho mínimo 361 px)
+● Navegación en desktop (ancho mínimo 769 px) */
+
+/* TABLET */
+@media (min-width:361px){
+    header nav{
+        display: block;
+    }
+    header div.contenedor-burger{
+        display: none;
+    }
+
+}    
+/* END TABLET */
+
+/* DESKTOP */
+@media (min-width: 769px){
+    
+}
+/* END DESKTOP */
