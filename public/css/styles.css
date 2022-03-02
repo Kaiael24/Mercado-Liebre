@@ -14,7 +14,7 @@
     --font-cuerpo: 14px;
     --font-titulares: 24px;
     --font-precios: 18px;
-    --font-descuentos: 16px;
+    --font-descuentos: 15px;
     --font-descripciones: 16px;
 }
 *{
@@ -30,24 +30,53 @@ body{
 header{
     background-color: var(--color-Amarillo);
     padding: 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header div{
+    display: flex;
+    padding: 0 10px;
+    width: 100%;
+    
 }
 header nav{
     display: none;
 }
-header img.logo{
-    width: 40%;
-    padding-left: 20px;
+header div img.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 35px;
 }
-header input{
-    display: block;
+header div form input{
+    width: 90%;
     margin-left: 15px ;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    
 }
-header button{
-    margin-left: 15px;
+header div form{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    margin-right: 5px;
+    position: relative;
+}
+header div form button{
+    position: absolute;
+    right: 0px;
+    height: calc(100% - 10px);
+    width: 20px;
+    border: none;
+    border-left: 1px solid lightgray;
+    background-color: transparent;
+    top: 8px;
 }
 header p{
-    text-align: center;
     font-size: var(--font-cuerpo);
+    margin-top: 30px;
 }
 header nav ul{
     list-style: none;
@@ -62,34 +91,60 @@ header div.contenedor-burger{
     background-color: var(--color-Celeste);
     color: var(--color-Blanco);
     border-radius: 6px;
-    font-size: 16px;
-    width: 30px;
-    height: 30px;
-    padding: 7px;
-    text-align: center;
-    margin: 10px auto 0;
+    width: 35px;
+    height: 35px;
+    margin-top: 30px;
+}
+header div.contenedor-burger i{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
 }
 /* FIN HEADER */
 
 /* MAIN */
 main{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--color-Gris-claro);
 }
+main div.div-banner img{
+    width: 100%;
+    height: 20%;
+}
 main section{
-    margin: 0 auto;
     width: 90%;
 }
 main section article{
     margin-bottom: 10px;
     background-color: var(--color-Blanco);
 }
-main section article div.envios-oferta{
+
+main section article div.datos-producto{
     border: solid 1px #ebebeb;
-    margin:0 15px 0 15px;
-    color: var(--color-Verde);
-    text-align: left;
-    
+    color: var(--color-Verde); 
+    position: relative;
+    height: 50px;
+    padding-left: 20px;
+}
+main section article div.datos-producto div.precio-descuento{
+    display: flex;
+    margin-top: 15px;
+
+}
+main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 main section h3.titulares{
     font-size: var(--font-titulares);
@@ -97,10 +152,14 @@ main section h3.titulares{
 main section p.precio{
     font-size: var(--font-precios);
     color: var(--color-Negro);
+    display: flex;
+    align-items: center;
+    width: 30%;
 }
 main section p.descuento{
     font-size: var(--font-descuentos);
     color: var(--color-Verde);
+    width: 70%;
 }
 main section p.descripcion{
     font-size: var(--font-descripciones);
@@ -112,17 +171,19 @@ main section p.descripcion{
 /* FOOTER */
     footer{
         margin:10px 0 20px;
-        text-align: center;
-        font-size: var(--font-cuerpo);
-       
+        display: flex;
+        flex-direction: column;
+        font-size: var(--font-cuerpo); 
     }
     footer article p{
         width: 80%;
-        margin: 0 auto;
+        text-align: center;
     }
     footer article {
         margin: 40px 0 30px;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     footer article i{
         color: var(--color-Celeste);
@@ -136,7 +197,6 @@ main section p.descripcion{
     footer div.copyright{
         font-size: 12px;
         margin-left: 15px;
-        text-align: start;
     }
 /* FIN FOOTER */
 
@@ -151,6 +211,17 @@ main section p.descripcion{
     }
     header div.contenedor-burger{
         display: none;
+    }
+    main section article div.datos-producto{
+        height: 80px;
+    }
+    main section article div.datos-producto div.precio-descuento{
+        margin-top: 10px;
+    }
+    main section p.descripcion{
+        display: block;
+        padding: 10px 0 10px;
+        
     }
 
 }    
